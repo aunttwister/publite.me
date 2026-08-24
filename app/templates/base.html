@@ -228,9 +228,9 @@
 <body>
   <header>
     {% block header %}
-    <h1>
+    <div class="site-title">
       <a href="/">{{ settings.blog_title if settings else "publite.me" }}</a>
-    </h1>
+    </div>
     <p>
       {{ settings.blog_description if settings else "A minimalist blog" }}
     </p>

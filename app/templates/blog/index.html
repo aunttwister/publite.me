@@ -3,9 +3,11 @@
 {% block content %}
 {% if current_tag %}
 <div class="tag-heading">
-  <h2>Posts tagged: <span class="highlight">{{ current_tag }}</span></h2>
+  <h1>Posts tagged: <span class="highlight">{{ current_tag }}</span></h1>
   <a href="/blog" class="button secondary small">Clear filter</a>
 </div>
+{% else %}
+<h1>Latest Posts</h1>
 {% endif %}
 
 <div class="posts">
